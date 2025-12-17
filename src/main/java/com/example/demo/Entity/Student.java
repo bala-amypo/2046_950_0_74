@@ -1,11 +1,8 @@
 package com.example.project.Entity;
-
-
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class student {
@@ -40,7 +37,7 @@ public student(){
 
 }
 
-public student(integer id, String name, String email, LocalDate dob, float cgpa) {
+public student(integer id, String name, String email) {
     this.id = id;
     this.name = name;
     this.email = email;
