@@ -12,7 +12,7 @@ public class student {
     private integer id;
     private String name;
     private String email;
-public int getId() {
+public integer getId() {
     return id;
 }
 
@@ -36,32 +36,15 @@ public void setEmail(String email) {
     this.email = email;
 }
 
-public LocalDate getDob() {
-    return dob;
-}
-
-public void setDob(LocalDate dob) {
-    this.dob = dob;
-}
-
-public float getCgpa() {
-    return cgpa;
-}
-
-public void setCgpa(float cgpa) {
-    this.cgpa = cgpa;
-}
-
 public student(){
 
 }
 
-public student(int id, String name, String email, LocalDate dob, float cgpa) {
+public student(integer id, String name, String email, LocalDate dob, float cgpa) {
     this.id = id;
     this.name = name;
     this.email = email;
-    this.dob = dob;
-    this.cgpa = cgpa;
+    
 }
 
 }
