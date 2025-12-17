@@ -1,19 +1,21 @@
 package com.example.project.Entity;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class student {
-    private int id;
+    private integer id;
     private String name;
     private String email;
-    private LocalDate dob;
-    private float cgpa;
-
-
 public int getId() {
     return id;
 }
 
-public void setId(int id) {
+public void setId(integer id) {
     this.id = id;
 }
 
